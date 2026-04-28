@@ -1,12 +1,10 @@
 # URL Bot
 
-An AI-powered tool that generates personalized bot and conversation starters based on url. This project uses OpenAI and LlamaIndex to create a tool that helps make introductions more personal and engaging.
+An AI-powered tool that generates personalized bot and conversation starters based on url. This project uses OpenAI and LlamaIndex.
 
 ## Project Overview
 
-Imagine you're heading to a big networking event, surrounded by potential employers and industry leaders. You want to make a great first impression, but you're struggling to come up with more than the usual, "What do you do?"
-
-This AI url bot does the research for you. You input a name, and within seconds, the bot searches the url, generating personalized questions based on someone's career highlights, interests, and even fun facts.
+This AI url bot does the research for you. You input a name, and within seconds, the bot searches the url, generating personalized questions based on someo website.
 
 ## Features
 
@@ -28,7 +26,6 @@ url_bot/
 │   ├── data_processing.py     # Data splitting and indexing
 │   ├── llm_interface.py       # LLM setup and interaction
 │   └── query_engine.py        # Query processing and response generation
-├── app.py                     # Gradio interface
 └── main.py                    # Main script to run without Gradio
 ```
 
@@ -75,16 +72,6 @@ python main.py --mock  # Use mock data
 python main.py --url "https://www.linkedin.com/in/username/" --api-key "your-api-key"
 ```
 
-#### Web Interface
-
-Launch the Gradio web interface:
-
-```bash
-python app.py
-```
-
-Then open your browser to the URL shown in the terminal (typically <http://127.0.0.1:7860>).
-
 ## Development Tasks
 
 This is a starter template with placeholder functions. Your task is to implement the following components:
@@ -112,7 +99,7 @@ This is a starter template with placeholder functions. Your task is to implement
 6. Update `modules/__init__.py` to import your implemented functions
 
 7. In `main.py`:
-   - Implement the `process_linkedin` function
+   - Implement the `process_url` function
    - Implement the `chatbot_interface` function
 
 ## License
@@ -123,4 +110,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - Openai for providing the LLM and embedding models
 - LlamaIndex for the data indexing and retrieval framework
-# urlbot
