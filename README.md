@@ -48,17 +48,15 @@ cd urlbot
 1. Create a virtual environment:
 
 ```bash
-python -m venv venv
+uv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 1. Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 ```
-
-1. Add your ProxyCurl API key to `config.py` (optional)
 
 ### Usage
 
@@ -67,9 +65,7 @@ pip install -r requirements.txt
 Run the bot using the command line:
 
 ```bash
-python main.py --mock  # Use mock data
-# OR
-python main.py --url "https://www.linkedin.com/in/username/" --api-key "your-api-key"
+python main.py --url "https://www.linkedin.com/in/username/"
 ```
 
 ## Development Tasks
