@@ -12,9 +12,6 @@ from modules.data_processing import (
     verify_embeddings,
 )
 from modules.query_engine import generate_initial_facts, answer_user_query
-from typing import Dict, Any, Optional
-import config
-import os
 from dotenv import load_dotenv
 
 
@@ -27,7 +24,7 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-load_dotenv()  # This must happen before generate_initial_facts is called
+load_dotenv()
 
 
 def process_url(url):
@@ -63,7 +60,7 @@ def process_url(url):
         # Generate and display the initial facts
         initial_facts = generate_initial_facts(vectordb_index)
 
-        print("\nHere are 3 interesting facts about this person:")
+        print("\nHere are interesting facts about the website:")
         print(initial_facts)
 
         # Start the chatbot interface

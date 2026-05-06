@@ -19,7 +19,6 @@ def create_openai_embedding() -> OpenAIEmbedding:
     Returns:
         OpenAIEmbedding model.
     """
-    # OpenAI looks for OPENAI_API_KEY .env
     openai_embedding = OpenAIEmbedding(
         model=config.EMBEDDING_MODEL_ID,  # "text-embedding-3-small"
     )
@@ -40,9 +39,8 @@ def create_openai_llm(
     Returns:
         OpenAI model.
     """
-    # OpenAI uses 'max_tokens' instead of 'max_new_tokens'
     openai_llm = OpenAI(
-        model=config.LLM_MODEL_ID,  # e.g., "gpt-4o" or "gpt-3.5-turbo"
+        model=config.LLM_MODEL_ID,
         temperature=temperature,
         max_tokens=max_tokens,
     )

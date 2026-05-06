@@ -1,7 +1,7 @@
 """Configuration settings for the Url Bot."""
 
 # Model settings
-LLM_MODEL_ID = "gpt-4o"
+LLM_MODEL_ID = "gpt-4o-mini"
 EMBEDDING_MODEL_ID = "text-embedding-3-small"
 
 # ProxyCurl API settings
@@ -26,7 +26,7 @@ Context information is below:
 
 {context_str}
 
-Based on the context provided, list 3 interesting facts about this person's career or education.
+Based on the context provided, create summary of this website.
 
 Answer in detail, using only the information provided in the context.
 """

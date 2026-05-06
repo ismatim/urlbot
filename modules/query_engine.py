@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 
 def generate_initial_facts(index: VectorStoreIndex) -> str:
-    """Generates interesting facts about the person\'s career or education.
+    """Generates interesting facts about the website\'s.
 
     Args:
         index: VectorStoreIndex containing the Website data.
@@ -38,9 +38,7 @@ def generate_initial_facts(index: VectorStoreIndex) -> str:
         )
 
         # Execute the query
-        query = (
-            "Provide three interesting facts about this person's career or education."
-        )
+        query = "Provide three interesting facts about this website."
         response = query_engine.query(query)
 
         # Return the facts

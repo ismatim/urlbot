@@ -98,6 +98,12 @@ This is a starter template with placeholder functions. Your task is to implement
    - Implement the `process_url` function
    - Implement the `chatbot_interface` function
 
+## To run from remote GitHub repository
+
+```bash
+uvx --from git+https://github.com/ismatim/urlbot urlbot <YOUR_URL_HERE>
+```
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
